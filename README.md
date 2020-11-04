@@ -1,6 +1,6 @@
 # DAcomp
 
-This repository includes code for simulating DA transmission. See the corresponding manuscript 'Dopamine release, diffusion and uptake: A computational model for synaptic and volume transmission' for more information.
+This repository includes code for simulating DA transmission. In particular we describe here how to create the plots from our corresponding manuscript 'Dopamine release, diffusion and uptake: A computational model for synaptic and volume transmission'. See [this Link](https://github.com/wiencke/DAcomp) for more information.
 
 ## Set Parameters
 
@@ -43,4 +43,13 @@ To illustrate issues regarding volume transmisson we simulated three scenarios. 
 ```
 %run main
 ```
-Again, by default this creates folders called according to the unixtime when running the command, here we refer to these folders as `unixtimeDSS`, `unixtimeSRS` and `unixtimeUIS`.
+Again, by default this creates folders called according to the unixtime when running the command. Here we refer to these folders as `unixtimeDSS`, `unixtimeSRS` and `unixtimeUIS`.
+
+
+### Laruelle's hypothesis: Fig. 6
+
+Here we simulate concentration in synaptic and extra-synaptic space to examine Laruelle´s hypothesis. This is to explain why strong differences between microdialysis measurements after nicotine and amphetamine administration co-occur with comparable PET results. Since microdialysis measures only extra-synaptic DA, the challenge between racloprite and endogeneous DA (PET) occurs mainly in the synaptic space for nicotine, but not amphetamine.
+
+%run laruelle -d dirname -s 10
+
+This chooses 10 random synaptic terminals from a specific simulation generated with `%run main` and saved in the directory `dirname` as for example described above for DSS, SRS and UIS. 
