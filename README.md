@@ -35,3 +35,12 @@ This Figure in our manuscript 'Dopamine release, diffusion and uptake: A computa
 %run main_terminal 
 mainSynapse('synaptic', True, bc, False)
 ```
+
+### Volume transmission: Fig. 5
+
+To illustrate issues regarding volume transmisson we simulated three scenarios. First, we refer to the normal or healthy condition as the "default setting simulation" (DSS). To simulate the presence of an agent stimulating DA release (SRS), in file `parameters.py` we increased the release probability (variable `rprob`) from 6% to 7.8%. This elevates DA tone to 129% of the DSS. For the uptake inhibition scenario (UIS), in file `parameters.py`, we changed the variables `Vmax` to 80% of the default and `Km` to 24μM, which elicits an increase of ~ 1273% overbaseline in extrasynaptic DA. With the respective parameters in `parameters.py` for each of the different scenarios we ran the following commands:
+
+```
+%run main
+```
+Again, by default this creates folders called according to the unixtime when running the command, here we refer to these folders as `unixtimeDSS`, `unixtimeSRS` and `unixtimeUIS`.
