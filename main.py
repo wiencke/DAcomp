@@ -158,7 +158,7 @@ monSpaceArray = np.array(monSpace)
 c = monSpaceArray[:,0]/vf
 plt.plot(np.arange(len(c))*dt_macro, c)
 
-crop = np.ceil(len(c)/4)
+crop = int(np.ceil(len(c)/4.))
 mean = c[crop:].mean()
 plt.plot(np.arange(len(c)-crop)*dt_macro+crop*dt_macro, np.ones(len(c)-crop)*mean, label = '%f'%(mean*1000) )
 plt.legend()
