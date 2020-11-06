@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from fipy import *
 import numpy as np
 import cPickle as pickle
 import time, os
