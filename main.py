@@ -57,6 +57,7 @@ nonSample = random.sample(nonNeur, int(len(nonNeur)*0.05))
 synSample = random.sample(set(trains.keys()).difference(set(nonNeur)), int((len(trains.keys())-len(nonNeur))*0.05))
 
 monSpace = []
+releaseMass = random.gauss(N,N_var)/avoga/1e-15
 massLS = releaseMass*np.loadtxt('MassLeavingSynapse.csv')
 
 lastSpike = {}
