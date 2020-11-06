@@ -1,12 +1,5 @@
 #!/usr/bin/env python
 
-from fipy import *
-import numpy as np
-from matplotlib import pyplot as plt
-import random
-
-
-
 # medium/volume parameters
 
 vf = 0.21 		# volume fraction = 0.21
@@ -39,7 +32,6 @@ alpha = 1.6		# regulates how big timesteps are when initializing a synaptic DA r
 fRateTonic = 4.0 	# impulses per second in population firing (default = 4.0, from Dreyer et al 2010)
 N = 3000. 		# number of dopamine molecules released during vesicle fusion (default = 3000, Pothos 1998)
 N_var = 0.		# variance in DA molecules released
-releaseMass = random.gauss(N,N_var)/avoga/1e-15		# mass released during vesicle fusion
 rprob = 0.06	 	# release probability (default = 0.06, from Dreyer et al 2010)
 Vmax = 4.1	 	# default = 4.1, from Dreyer et al 2010 // in Wu et al 2001: Vmax=3.8 microM/s
 Km = 0.4		# default = 0.21, from Dreyer et al 2010 // in Wu et al 2001: Km=0.22microM
