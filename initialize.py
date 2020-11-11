@@ -21,9 +21,7 @@ def initialize(phiIN,N, vf):
   
   bottomFaces = (zfc >= dist/2 - dx) * mesh.exteriorFaces() * (zfc <= dist/2 + dx)
   releaseFaces = bottomFaces * (np.sqrt(xfc**2 + yfc**2) < radRelease)
-  if not releaseFaces: print ('no release site')
-
-  
+    
   releaseCells = np.zeros(len(zc), bool)
   for id in mesh.faceCellIDs[0][releaseFaces].compressed():
     releaseCells[id] = True
