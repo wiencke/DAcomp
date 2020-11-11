@@ -26,6 +26,7 @@ dx3 = 2.
 dt_macro = 0.00025	# dt_macro = 0.00025
 dt_nano = 0.00000001	# dt_nano = 0.00000001
 alpha = 1.6		# regulates how big timesteps are when initializing a synaptic DA release
+microMaxT = 0.1
 
 # parameters of interest for different scenarios of DA transmission
 
