@@ -3,6 +3,7 @@
 import time, os, sys, shutil
 import numpy as np
 import cPickle as pickle
+from fipy import *
 
 cfgfile = 'parameters'
 from parameters import *
