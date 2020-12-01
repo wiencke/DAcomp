@@ -1,6 +1,6 @@
 # DAcomp
 
-This repository includes code for simulating DA transmission. In particular we describe here how to create the plots from our corresponding manuscript 'Dopamine release, diffusion and uptake: A computational model for synaptic and volume transmission'. See [this Link](https://github.com/wiencke/DAcomp) for more information. To replicate the plots you will need to have the following packages installed: numpy, fipy.
+This repository includes code for simulating DA transmission. In particular we describe here how to create the plots from our corresponding manuscript 'Dopamine release, diffusion and uptake: A computational model for synaptic and volume transmission'. See [this Link](https://journals.plos.org/ploscompbiol/article/metrics?id=10.1371/journal.pcbi.1008410#viewedHeader) for more information. To replicate the plots you will need to have the following packages installed: numpy, fipy.
 
 
 ## Set Parameters
